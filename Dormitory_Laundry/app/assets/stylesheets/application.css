@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+.container{
+	text-align: center;
+}
+
+h3{
+	font-size: 40px;
+	margin-top: 120px;
+	margin-bottom: 80px;
+}
+
+.form-control{
+	font-size: 20px;
+}
