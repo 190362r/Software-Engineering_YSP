@@ -9,11 +9,11 @@
 <div class="col-md-6 col-md-offset-3">
   <%= form_for(:session, url: login_path) do |f| %>
 
-  <%= f.label :userID %>
-  <%= f.text_field :userID , class: 'form-control' %>
+  <%= f.label :user_id %>
+  <%= f.text_field :user_id , class: 'form-control' %>
 
   <%= f.label :password %>
-  <%= f.password_field :pass, class: 'form-control' %>
+  <%= f.password_field :password, class: 'form-control' %>
 
   <%= f.submit "Log in", class: "btn btn-primary" %>
   <% end %>
