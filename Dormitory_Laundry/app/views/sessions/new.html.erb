@@ -4,18 +4,18 @@
 -->
 
 <% provide(:title, "Log in") %>
-<h3>Log in</h3>
+<h3>ランドリー利用状況確認システム</h3>
 <% if flash.now[:danger] %>
-<p><%= flash.now[:danger] %></p>
+<p class= error><%= flash.now[:danger] %></p>
 <% end %>
 <div class="col-md-6 col-md-offset-3">
-  <%= form_for(:session, url: login_path) do |f| %>
+  <%= form_for(:session, url: sessions_path) do |f| %>
   <p>
   <%= f.label :user_id %>
-  <%= f.text_field :user_id , class: 'form-control' , :placeholder => "部屋番号を入力"%></p>
+  <%= f.text_field :user_id , class: 'form-control' , :placeholder => "部屋番号を入力 ex)A011"%></p>
   <p>
   <%= f.label :password %>
   <%= f.password_field :password, class: 'form-control', :placeholder => "半角数字4桁" %></p>
   <p>
-  <%= f.submit "Log in", class: "btn btn-primary" %></p>
+  <%= f.submit "ログイン", class: "btn btn-primary" %></p>
   <% end %>

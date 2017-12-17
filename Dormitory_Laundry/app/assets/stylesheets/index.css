@@ -24,22 +24,27 @@ header .notice {
 	margin: 0 auto;
 	border-bottom:solid 2px #0000ff;
 }
+
 .situation{
 	width: 500px;
 	height: 60px;
 	color: white;
 	background: blue;
 	border: solid;
-	margin: 0 auto;
 	margin-top: 100px;
 }
+
+.center{
+	margin: 0 auto;
+	width: 500px;
+}
+
 .info{
 	width: 500px;
 	height: 60px;
 	color: white;
 	background: green;
 	border: solid;
-	margin: 0 auto;
 	margin-top: 50px;
 }
 .textcenter{
@@ -50,3 +55,23 @@ footer{
 	height: 100px;
 	background: blue;
 }
+
+.button{
+	height: 60px;
+	width: 500px;
+	background: blue;
+}
+
+.error{
+	color: red;
+}
+
+a{
+text-decoration: none
+}
+
+a:link {color:#ffffff}
+a:visited{color:#ffffff}
+a:hover{color:#ff0000}
+a:active{color:#ff0000}
+
