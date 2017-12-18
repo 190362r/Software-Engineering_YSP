@@ -10,5 +10,9 @@ Rails.application.routes.draw do
 	#delete 'logout'	=> 'sessions#destroy'
 
 	resources :sessions
-		
+	get 'kanrisinki', to: 'sessions#kanrisinki'
+	get 'naiyoukakunin.html.erb', to: 'sessions#naiyoukakunin'
+	get 'kanri_itiranhensyu.html.erb', to: 'sessions#kanri_itiranhensyu'
+	get 'kanri_hensyu.html.erb', to: 'sessions#kanri_hensyu'
+	
 end

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ランドリー状況確認システム（仮）</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <header>
+	<div class="user">ユーザID:kanri
+	<input type="button" onclick="location.href='/'" value="ログアウト" >
+	<!--<%= button_to "ログアウト", sessions_path  %>-->
+	</div>
+	<div class="notice"><div class="mail"><%= image_tag 'mail_whi.gif' %></div></div>
+	<p class="title">ランドリー状況確認システム(管理者)</p>
+      </header>
+      <div class="pagetitle">
+	<h1 class="textcenter"> 一覧・編集</h1>
+      </div>
+
+<div class=notice>
+<h4>1.紛失物の種類を選択してください</h4>
+<input type="checkbox" name="riyu" value="1" checked="checked">上着
+<input type="checkbox" name="riyu" value="2" checked="checked">靴下
+<input type="checkbox" name="riyu" value="3" checked="checked">パンツ
+<input type="checkbox" name="riyu" value="1" checked="checked">下着
+<input type="checkbox" name="riyu" value="1" checked="checked">その他
+
+<h4>2.紛失物の色を選択してください</h4>
+<input type="checkbox" name="riyu" value="2" checked="checked">赤色系
+<input type="checkbox" name="riyu" value="3" checked="checked">青色系
+<input type="checkbox" name="riyu" value="1" checked="checked">黄色系
+<input type="checkbox" name="riyu" value="1" checked="checked">緑色系
+<input type="checkbox" name="riyu" value="2" checked="checked">黒色系
+<input type="checkbox" name="riyu" value="3" checked="checked">白色系
+<input type="checkbox" name="riyu" value="1" checked="checked">その他
+
+<div class="center">
+	<a href="serach_result.html.erb">
+	<div class="situation">
+	<h2>検索</h2>
+	</div>
+	</a>
+	
+    </div>
+</title>
+</body>
+</html>
+
