@@ -1,3 +1,4 @@
+# coding: utf-8
 class SessionsController < ApplicationController
   def new
   end
@@ -7,7 +8,9 @@ class SessionsController < ApplicationController
 	if user && User.find_by(password: params[:session][:password])
 	redirect_to 'https://www.google.co.jp'
 	else
-	redirect_to 'https://www.yahoo.co.jp'
+	  #redirect_to 'https://www.yahoo.co.jp'
+          flash.now[:danger] = 'IDかパスワードが正しくありません'
+          render 'new'
 	end
   end
 end
