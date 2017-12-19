@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ランドリー状況確認システム（仮）</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <header>
+	<div class="user">ユーザID:<%= current_user.user_id %><!--<input type="button" value="ログアウト">--><%= button_to "ログアウト", logout_path  %></div>
+	<div class="notice"><div class="mail"><%= image_tag 'mail_whi.gif' %></div></div>
+	<p class="title">ランドリー状況確認システム</p>
+      </header>
+      <div class="pagetitle">
+	<h1 class="textcenter"> メニュー </h1>
+      </div>
+      <div class="situation">
+	<h3 class="textcenter">利用状況確認</h3>
+      </div>
+      
+      <div class="info">
+	<h3 class="textcenter">紛失物情報</h3>
+      </div>
+    </div> <!-- wrapper -->
+  </body>
+</html>
