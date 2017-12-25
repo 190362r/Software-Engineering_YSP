@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ランドリー状況確認システム（仮）</title>
+    <link rel="stylesheet" href="itiran.css">
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <header>
+	<div class="user">ユーザID:A011
+	<input type="button" onclick="location.href='/'" value="ログアウト" >
+	<!--<%= button_to "ログアウト", sessions_path  %>-->
+	</div>
+	<div class="notice"><div class="mail"><%= image_tag 'mail_whi.gif' %></div></div>
+	<p class="title">ランドリー状況確認システム</p>
+      </header>
+      <div class="pagetitle">
+	<h1 class="textcenter"> 検索結果</h1>
+      </div>
+<%= link_to '/search_result.html.erb' do%>
+<%= image_tag 'kutusita.png', :size => '200x200' %>
+<%end%>
+
+<%= image_tag 'adidas.png', :size => '200x200' %>
+<%= image_tag 'gray.png', :size => '200x200' %>
+<%= image_tag 'kutu1.jpg', :size => '200x200' %>
+<%= image_tag 'kutu2.jpg', :size => '200x200' %>
+<%= image_tag 'kutu3.jpg', :size => '200x200' %>
+<%= image_tag 'kutu4.jpg', :size => '200x200' %>
+<%= image_tag 'kutu5.jpg', :size => '200x200' %>
+<%= image_tag 'kutu6.jpg', :size => '200x200' %>
+<%= image_tag 'kutu7.jpg', :size => '200x200' %>
+<%= image_tag 'kutu8.jpg', :size => '200x200' %>
+<%= image_tag 'kutu9.jpg', :size => '200x200' %>
+
+<br><div2><input type="button" value="1" >
+<input type="button" value="2" >
+<input type="button" value="3" >
+<input type="button" value="次＞" >
+<input type="button" value="最後" >
+</div2>
+<div3><input type="button" onclick="location.href='loss_search.html.erb'" value="検索画面へ戻る" ></div3>
+</br>
+
+</title>
+</body>
+</html>
+

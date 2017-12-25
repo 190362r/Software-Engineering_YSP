@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ランドリー状況確認システム（仮）</title>
+    <link rel="stylesheet" href="naiyoukakunin.css">
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <header>
+	<div class="user">ユーザID:kanri
+	<input type="button" onclick="location.href='/'" value="ログアウト" >
+	<!--<%= button_to "ログアウト", sessions_path  %>-->
+	</div>
+	<div class="notice"><div class="mail"><%= image_tag 'mail_whi.gif' %></div></div>
+	<p class="title">ランドリー状況確認システム(管理者)</p>
+      </header>
+      <div class="pagetitle">
+	<h1 class="textcenter"> 一覧・編集</h1>
+      </div>
+
+<%= image_tag 'kutusita.png', :size => '300x200' %>
+
+<h4>種類: 靴下</h4>
+<h4>色: 青色系</h4>
+<div1><input type="button" onclick="location.href='kanri_hensyu.html.erb'" value="編集" >
+<input type="button" onclick="location.href='/'" value="削除" >
+<input type="button" onclick="location.href='itiran_hit.html.erb'" value="戻る" ></div1></div1>
+
+
+</title>
+</body>
+</html>
+

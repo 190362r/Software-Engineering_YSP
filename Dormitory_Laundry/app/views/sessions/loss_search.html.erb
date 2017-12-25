@@ -9,15 +9,15 @@
   <body>
     <div id="wrapper">
       <header>
-	<div class="user">ユーザID:kanri
+	<div class="user">ユーザID:A011
 	<input type="button" onclick="location.href='/'" value="ログアウト" >
 	<!--<%= button_to "ログアウト", sessions_path  %>-->
 	</div>
 	<div class="notice"><div class="mail"><%= image_tag 'mail_whi.gif' %></div></div>
-	<p class="title">ランドリー状況確認システム(管理者)</p>
+	<p class="title">ランドリー状況確認システム</p>
       </header>
       <div class="pagetitle">
-	<h1 class="textcenter"> 一覧・編集</h1>
+	<h1 class="textcenter"> 紛失物検索</h1>
       </div>
 
 <div class=notice>
@@ -32,13 +32,15 @@
 <input type="checkbox" name="riyu" value="2" >赤色系
 <input type="checkbox" name="riyu" value="3" >青色系
 <input type="checkbox" name="riyu" value="1" >黄色系
-<input type="checkbox" name="riyu" value="1" >緑色系
+<input type="checkbox" name="riyu" value="1">緑色系
 <input type="checkbox" name="riyu" value="2" >黒色系
 <input type="checkbox" name="riyu" value="3" >白色系
 <input type="checkbox" name="riyu" value="1" >その他
-
+<h4>2.紛失物の画像を選択してください</h4>
+<h5><input type="button" onclick="location.href='/'" value="参照" > 画像を挿入してください</h5>
+</div>
 <div class="center">
-	<a href="itiran_hit.html.erb">
+	<a href="search_hit.html.erb">
 	<div class="situation">
 	<h2>検索</h2>
 	</div>
