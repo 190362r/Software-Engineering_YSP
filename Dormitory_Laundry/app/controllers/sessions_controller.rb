@@ -12,7 +12,8 @@ class SessionsController < ApplicationController
 	if kanri_id == 'kanri' && kanri_pass == '0004'
 	   render 'kanri'
 	elsif user && user_pass
-          log_in user      
+          log_in user
+          SendMailer.notification(current_user).deliver # 通知メール送信
 	   render 'index'
 	else
 	  #redirect_to 'https://www.yahoo.co.jp'

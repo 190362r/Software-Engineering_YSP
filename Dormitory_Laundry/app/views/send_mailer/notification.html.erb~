@@ -1,0 +1,5 @@
+<h1>Send#notification</h1>
+
+<p>
+  <%= @greeting %>, find me in app/views/send_mailer/notification.html.erb
+</p>
