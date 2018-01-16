@@ -21,24 +21,33 @@
       </div>
 
 <div class=notice>
-<h4>1.紛失物の種類を選択してください</h4>
-<input type="checkbox" name="riyu" value="1" >上着
-<input type="checkbox" name="riyu" value="2" >靴下
-<input type="checkbox" name="riyu" value="3" >パンツ
-<input type="checkbox" name="riyu" value="1">下着
-<input type="checkbox" name="riyu" value="1">その他
-
-<h4>2.紛失物の色を選択してください</h4>
-<input type="checkbox" name="riyu" value="2" >赤色系
-<input type="checkbox" name="riyu" value="3" >青色系
-<input type="checkbox" name="riyu" value="1" >黄色系
-<input type="checkbox" name="riyu" value="1" >緑色系
-<input type="checkbox" name="riyu" value="2" >黒色系
-<input type="checkbox" name="riyu" value="3" >白色系
-<input type="checkbox" name="riyu" value="1" >その他
-<h4>2.紛失物の画像を選択してください</h4>
-<h5><input type="button" onclick="location.href='/'" value="参照" > 画像を挿入してください</h5>
+<h2 class="yohaku">1.紛失物の種類を選択してください</h2>
+<div class="chkbox">
+<input type="checkbox" id="chkbox1" name="chkbox03" value="1" ><label for="chkbox1">上着</label>
+<input type="checkbox" id="chkbox2" name="chkbox03" value="2" ><label for="chkbox2">靴下</label>
+<input type="checkbox" id="chkbox3" name="chkbox03" value="3" ><label for="chkbox3">パンツ</label>
+<input type="checkbox" id="chkbox4" name="chkbox03" value="4" ><label for="chkbox4">下着</label>
+<input type="checkbox" id="chkbox5" name="chkbox03" value="5" ><label for="chkbox5">その他</label>
 </div>
+
+<h2 class="yohaku">2.紛失物の色を選択してください</h2>
+<p>
+<div class="chkbox">
+<input type="checkbox" id="chkbox6" name="chkbox03" value="1" ><label for="chkbox6">赤色系</label>
+<input type="checkbox" id="chkbox7" name="chkbox03" value="2" ><label for="chkbox7">青色系</label>
+<input type="checkbox" id="chkbox8" name="chkbox03" value="3" ><label for="chkbox8">黄色系</label>
+<input type="checkbox" id="chkbox9" name="chkbox03" value="4" ><label for="chkbox9">緑色系</label>
+</div>
+</p>
+<div class="chkbox">
+<input type="checkbox" id="chkbox10" name="chkbox03" value="1" ><label for="chkbox10">黒色系</label>
+<input type="checkbox" id="chkbox11" name="chkbox03" value="2" ><label for="chkbox11">白色系</label>
+<input type="checkbox" id="chkbox12" name="chkbox03" value="3" ><label for="chkbox12">その他</label>
+</div>
+
+<h2 class="yohaku">3.紛失物の画像を選択してください</h2>
+</div>
+
 <div class="center">
 	<a href="naiyoukakunin.html.erb">
 	<div class="situation">
@@ -50,4 +59,3 @@
 </title>
 </body>
 </html>
-

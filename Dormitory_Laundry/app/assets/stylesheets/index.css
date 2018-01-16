@@ -12,8 +12,8 @@ header .notice {
   border-radius: 50%;
   height: 50px;
   width: 50px;
-	background: #aaaaaa;
-	float: right;
+  background: #aaaaaa;
+  float: right;
 }
 .notice .mail{
 	margin: 15px 10px;
@@ -34,9 +34,22 @@ header .notice {
 	margin-top: 100px;
 }
 
+.situation2{
+	width: 500px;
+	height: 60px;
+	color: white;
+	background: green;
+	border: solid;
+	margin-top: 100px;
+}
+
 .center{
 	margin: 0 auto;
 	width: 500px;
+}
+
+.yohaku{
+	padding-top: 40px
 }
 
 .info{
@@ -74,4 +87,91 @@ a:link {color:#ffffff}
 a:visited{color:#ffffff}
 a:hover{color:#ff0000}
 a:active{color:#ff0000}
+
+.chkbox {
+	margin:			0 0 10px 20px;
+}
+/* ラベルのスタイル　*/
+.chkbox label {
+	padding-left:		30px;			/* ラベルの位置 */
+	padding-right:	50px;
+	font-size:		20px;
+	line-height:		20px;
+	display:		inline-block;
+	cursor:		pointer;
+	position:		relative;
+}
+
+.chkbox label:hover{
+	color:			#0000ff;
+}
+
+/* ボックスのスタイル */
+.chkbox label:before {
+	content:		'';
+	width:			20px;			/* ボックスの横幅 */
+	height:			20px;			/* ボックスの縦幅 */
+	display:		inline-block;
+	position:		absolute;
+	left:			0;
+	background-color:	#fff;
+	box-shadow:		inset 1px 2px 3px 0px #000;
+	border-radius:		6px 6px 6px 6px;
+}
+/* 元のチェックボックスを表示しない */
+.chkbox input[type=checkbox] {
+	display:		none;
+}
+/* チェックした時のスタイル */
+.chkbox input[type=checkbox]:checked + label:before {
+	content:		'\2713';		/* チェックの文字 */ 
+	font-size:		20px;			/* チェックのサイズ */
+	color:			#fff;			/* チェックの色 */
+	background-color:	#06f;			/* チェックした時の色 */
+}
+
+/* 緑 */
+.chkbox2 {
+	margin:			0 0 10px 20px;
+}
+/* ラベルのスタイル　*/
+.chkbox2 label {
+	padding-left:		30px;			/* ラベルの位置 */
+	padding-right:	50px;
+	font-size:		20px;
+	line-height:		20px;
+	display:		inline-block;
+	cursor:		pointer;
+	position:		relative;
+}
+
+.chkbox2 label:hover{
+	color:			#009900;
+}
+
+/* ボックスのスタイル */
+.chkbox2 label:before {
+	content:		'';
+	width:			20px;			/* ボックスの横幅 */
+	height:			20px;			/* ボックスの縦幅 */
+	display:		inline-block;
+	position:		absolute;
+	left:			0;
+	background-color:	#fff;
+	box-shadow:		inset 1px 2px 3px 0px #000;
+	border-radius:		6px 6px 6px 6px;
+}
+/* 元のチェックボックスを表示しない */
+.chkbox2 input[type=checkbox] {
+	display:		none;
+}
+/* チェックした時のスタイル */
+.chkbox2 input[type=checkbox]:checked + label:before {
+	content:		'\2713';		/* チェックの文字 */ 
+	font-size:		20px;			/* チェックのサイズ */
+	color:			#fff;			/* チェックの色 */
+	background-color:	#00cc00;			/* チェックした時の色 */
+}
+
+
 
