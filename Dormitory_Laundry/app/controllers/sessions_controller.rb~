@@ -5,19 +5,23 @@ class SessionsController < ApplicationController
   end
 
   def create
-	user = User.find_by(user_id: params[:session][:user_id])
-	user_pass = User.find_by(password: params[:session][:password])
+        user = User.find_by(user_id: params[:session][:user_id])
+	# user_pass = User.find_by(password: params[:session][:password])
+        user_pass = User.find_by(user_id: params[:session][user_id], password: params[:session][:password])
+       # user_pass = User.find_by(user_id: 'A011', password: params[:session][:password])
 	kanri_id = params[:session][:user_id]	
 	kanri_pass = params[:session][:password]	
 	if kanri_id == 'kanri' && kanri_pass == '0004'
 	   render 'kanri'
-	elsif user && user_pass
+	   #elsif user && user_pass
+        elsif user && user_pass
           log_in user
-          SendMailer.notification_mail(current_user).deliver
+          SendMailer.notification(current_user).deliver
 	   render 'index'
 	else
 	  #redirect_to 'https://www.yahoo.co.jp'
-          flash.now[:danger] = 'ユーザIDかパスワードが正しくありません'
+          #flash.now[:danger] = 'ユーザIDかパスワードが正しくありません'
+          flash.now[:danger] = @users
           render 'new'
 	end
   end
