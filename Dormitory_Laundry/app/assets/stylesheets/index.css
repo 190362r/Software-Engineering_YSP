@@ -43,6 +43,24 @@ header .notice {
 	margin-top: 100px;
 }
 
+.situation3{
+	width: 500px;
+	height: 60px;
+	color: white;
+	background: #2c7cff;
+	border: solid;
+	margin-top: 100px;
+}
+
+.situation4{
+	width: 500px;
+	height: 60px;
+	color: white;
+	background: #ffa500;
+	border: solid;
+	margin-top: 50px;
+}
+
 .center{
 	margin: 0 auto;
 	width: 500px;
@@ -173,5 +191,54 @@ a:active{color:#ff0000}
 	background-color:	#00cc00;			/* チェックした時の色 */
 }
 
+.a .bton {
+    width: 80px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    background: #008DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;/* for Safari and Chrome 対応*/
+    -moz-border-radius: 5px;/* for Firefox 対応*/
+    box-shadow: 2px 2px 2px #555;
+    cursor: pointer;
+}
 
+.a .bton2{
+    width: 80px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    background: #00cc33;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;/* for Safari and Chrome 対応*/
+    -moz-border-radius: 5px;/* for Firefox 対応*/
+    box-shadow: 2px 2px 2px #555;
+    cursor: pointer
+}
+
+.a .bton3{
+    width: 80px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    background: red;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;/* for Safari and Chrome 対応*/
+    -moz-border-radius: 5px;/* for Firefox 対応*/
+    box-shadow: 2px 2px 2px #555;
+    cursor: pointer;
+}
 

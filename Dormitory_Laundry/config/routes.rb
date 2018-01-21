@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 	#delete 'logout'	=> 'sessions#destroy'
 
 	resources :sessions
-        
+
 	get 'kanrisinki', to: 'photos#new'
 	get 'naiyoukakunin.html.erb', to: 'sessions#naiyoukakunin'
 	get 'kanri_itiranhensyu.html.erb', to: 'sessions#kanri_itiranhensyu'
@@ -21,6 +21,9 @@ Rails.application.routes.draw do
        get 'search_hit.html.erb',to: 'sessions#search_hit'
        get 'search_result.html.erb',to: 'sessions#search_result'
        get 'itiran_result.html.erb',to: 'sessions#itiran_result'
+	get 'sakujyo_kanryo.html.erb', to: 'sessions#sakujyo_kanryo'
+	get 'sinkoku_kanryo.html.erb', to: 'sessions#sinkoku_kanryo'
+
 	get 'gest_use_pages/gest_use_main.html.erb',to:'gest_use_pages#gest_use_main'
 	get 'gest_use_wash',to:'gest_use_pages#gest_use_wash'
 	get 'gest_use_dry',to:'gest_use_pages#gest_use_dry'

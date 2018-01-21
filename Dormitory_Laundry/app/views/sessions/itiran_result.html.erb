@@ -14,19 +14,20 @@
 	<!--<%= button_to "ログアウト", sessions_path  %>-->
 	</div>
 	<div class="notice"><div class="mail"><%= image_tag 'mail_whi.gif' %></div></div>
-	<p class="title">ランドリー状況確認システム(管理者)</p>
+	<p class="title">ランドリー状況確認システム</p>
       </header>
       <div class="pagetitle">
 	<h1 class="textcenter"> 一覧・編集</h1>
       </div>
 
-<%= image_tag 'kutusita.png', :size => '300x200' %>
+<%= image_tag 'kutusita.png', :size => '400x300' %>
 
-<h4>種類: 靴下</h4>
-<h4>色: 青色系</h4>
-<div1><input type="button" onclick="location.href='kanri_hensyu.html.erb'" value="編集" >
-<input type="button" onclick="location.href='/'" value="削除" >
-<input type="button" onclick="location.href='itiran_hit.html.erb'" value="戻る" ></div1></div1>
+<h2>種類: 靴下</h2>
+<h2>色: 青色系</h2>
+<div1 class="a">
+<input type="button" onclick="location.href='kanri_hensyu.html.erb'" value="編集" class="bton2">
+<%= link_to '削除', "sakujyo_kanryo.html.erb", class:"bton3", method: :get, data: {confirm: 'この紛失物を削除しますか？'}%>
+<input type="button" onclick="location.href='itiran_hit.html.erb'" value="戻る" class="bton"></div1></div1>
 
 
 </title>

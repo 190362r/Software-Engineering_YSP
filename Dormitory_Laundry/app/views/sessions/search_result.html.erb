@@ -9,7 +9,7 @@
   <body>
     <div id="wrapper">
       <header>
-	<div class="user">ユーザID:A011
+	<div class="user">ユーザID:<%= current_user.user_id %>
 	<input type="button" onclick="location.href='/'" value="ログアウト" >
 	<!--<%= button_to "ログアウト", sessions_path  %>-->
 	</div>
@@ -20,13 +20,14 @@
 	<h1 class="textcenter"> 検索結果</h1>
       </div>
 
-<%= image_tag 'kutusita.png', :size => '300x200' %>
+<%= image_tag 'kutusita.png', :size => '400x300' %>
 
-<h4>種類: 靴下</h4>
-<h4>色: 青色系</h4>
-<div1>
-<input type="button" onclick="location.href='/'" value="申告" >
-<input type="button" onclick="location.href='search_hit.html.erb'" value="戻る" ></div1>
+<h2>種類: 靴下</h2>
+<h2>色: 青色系</h2>
+<div1 class="a">
+<%= link_to '申告', "sinkoku_kanryo.html.erb", class:"bton2", data: {confirm: '管理者に自分の紛失物であると申告しますか？'}%>
+
+<input type="button" onclick="location.href='search_hit.html.erb'" value="戻る" class="bton"></div1>
 
 </title>
 </body>

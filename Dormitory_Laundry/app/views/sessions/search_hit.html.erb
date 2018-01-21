@@ -9,7 +9,7 @@
   <body>
     <div id="wrapper">
       <header>
-	<div class="user">ユーザID:A011
+	<div class="user">ユーザID:<%= current_user.user_id %>
 	<input type="button" onclick="location.href='/'" value="ログアウト" >
 	<!--<%= button_to "ログアウト", sessions_path  %>-->
 	</div>
