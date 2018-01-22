@@ -1,16 +1,5 @@
 
-.dry_main_box {
-  max-width: 80%;
-  width:1200px;
-  height:420px;
-
-  /* padding: 10px;
-  margin-bottom: 10px*/
-  border: 3px solid #000000;
-  margin: 0 auto;
-}
-
-
+@media screen and (min-width: 769px){
 .clear{clear:both;}
 
 .dry_redbox{
@@ -50,27 +39,91 @@
 }
 
 
-@media screen and (max-width: 800px) {
-  .dry_main_box {
-    max-width: 80%;
-    width:600px;
-    height:210px;
-
-    /* padding: 10px;
-    margin-bottom: 10px*/
-    border: 3px solid #000000;
-    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .clear{clear:both;}
+  .dry_redbox{
+    color: #FFF;
+    width:40px;
+    height:37px;
+    margin-top: 5px;
+    margin-left:25px;
+    background-color:#F00;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    float: left;
   }
 
+  .dry_box{
+    color: #FFF;
+    width:40px;
+    height:40px;
+    margin-top: 5px;
+    margin-left:25px;
+    background-color:#0099ff;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    float: left;
+  }
 
-  .clear{clear:both;}
+   .dry_blueboxdry_redbox{
+    color: #FFF;
+    width:40px;
+    height:40px;
+    margin-top: 5px;
+    margin-left:25px;
+    background-color:#f-;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    float: left;
+  }
+}
 
+@media screen and (max-width:640px){
+  .dry_redbox{
+    color: #FFF;
+    width:37px;
+    height:37px;
+    margin-top: 5px;
+    margin-left:30px;
+    background-color:#F00;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    float: left;
+  }
+
+  .dry_box{
+    color: #FFF;
+    width:37px;
+    height:37px;
+    margin-top: 5px;
+    margin-left:30px;
+    background-color:#0099ff;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    float: left;
+  }
+
+   .dry_blueboxdry_redbox{
+    color: #FFF;
+    width:37px;
+    height:37px;
+    margin-top: 5px;
+    margin-left:30px;
+    background-color:#f-;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    float: left;
+  }
+}
+
+@media screen and (max-width:450px){
   .dry_redbox{
     color: #FFF;
     width:25px;
     height:25px;
-    margin-top: 2.5px;
-    margin-left:17.5px;
+    margin-top: 5px;
+    margin-left:10px;
     background-color:#F00;
     border-radius: 10px;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
@@ -81,8 +134,8 @@
     color: #FFF;
     width:25px;
     height:25px;
-    margin-top: 2.5px;
-    margin-left:17.5px;
+    margin-top: 5px;
+    margin-left:10px;
     background-color:#0099ff;
     border-radius: 10px;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
@@ -93,12 +146,13 @@
     color: #FFF;
     width:25px;
     height:25px;
-    margin-top: 2.5px;
-    margin-left:17.5px;
+    margin-top: 5px;
+    margin-left:10px;
     background-color:#f-;
     border-radius: 10px;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
     float: left;
   }
+}
 
 }
