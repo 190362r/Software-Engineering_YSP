@@ -1,0 +1,23 @@
+current directory: /home/kubosou/Software-Engineering_YSP/Dormitory_Laundry/vendor/bundle/ruby/2.4.0/gems/unf_ext-0.0.7.4/ext/unf_ext
+/home/kubosou/.rbenv/versions/2.4.2/bin/ruby -r ./siteconf20171227-4100-1e5r794.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /home/kubosou/Software-Engineering_YSP/Dormitory_Laundry/vendor/bundle/ruby/2.4.0/gems/unf_ext-0.0.7.4/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /home/kubosou/Software-Engineering_YSP/Dormitory_Laundry/vendor/bundle/ruby/2.4.0/gems/unf_ext-0.0.7.4/ext/unf_ext
+make "DESTDIR="
+compiling unf.cc
+cc1plus: 警告: コマンドラインオプション ‘-Wimplicit-int’ は C/ObjC 用としては有効ですが、C++ 用としては有効ではありません [デフォルトで有効]
+cc1plus: 警告: コマンドラインオプション ‘-Wdeclaration-after-statement’ は C/ObjC 用としては有効ですが、C++ 用としては有効ではありません [デフォルトで有効]
+cc1plus: 警告: コマンドラインオプション ‘-Wimplicit-function-declaration’ は C/ObjC 用としては有効ですが、C++ 用としては有効ではありません [デフォルトで有効]
+cc1plus: 警告: 認識できないコマンドラインオプション "-Wno-self-assign" です [デフォルトで有効]
+cc1plus: 警告: 認識できないコマンドラインオプション "-Wno-constant-logical-operand" です [デフォルトで有効]
+cc1plus: 警告: 認識できないコマンドラインオプション "-Wno-parentheses-equality" です [デフォルトで有効]
+cc1plus: 警告: 認識できないコマンドラインオプション "-Wno-tautological-compare" です [デフォルトで有効]
+linking shared-object unf_ext.so
+
+current directory: /home/kubosou/Software-Engineering_YSP/Dormitory_Laundry/vendor/bundle/ruby/2.4.0/gems/unf_ext-0.0.7.4/ext/unf_ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20171227-4100-bay44u

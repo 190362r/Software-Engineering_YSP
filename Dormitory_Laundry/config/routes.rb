@@ -21,4 +21,8 @@ Rails.application.routes.draw do
        get 'search_hit.html.erb',to: 'sessions#search_hit'
        get 'search_result.html.erb',to: 'sessions#search_result'
        get 'itiran_result.html.erb',to: 'sessions#itiran_result'
+	get 'gest_use_pages/gest_use_main.html.erb',to:'gest_use_pages#gest_use_main'
+	get 'gest_use_wash',to:'gest_use_pages#gest_use_wash'
+	get 'gest_use_dry',to:'gest_use_pages#gest_use_dry'
+
 end

@@ -1,0 +1,168 @@
+// Place all the styles related to the Gest_use_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//@import "bootstrap-sprockets";
+//@import "bootstrap";
+
+.use_main{
+  margin: auto
+}
+
+//利用状況メインー洗濯機ボタンCSS
+.use_wash{
+display:inline-block;
+padding: 30px 90px;
+margin: 15px;
+text-decoration: none;
+background: #0099ff;/*ボタン色*/
+color: #FFF;
+border-bottom: solid 4px #627295;
+border-radius: 3px;
+}
+
+.use_wash:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+// 利用状況メイン―乾燥機ボタンCSS
+.use_dry{
+display: inline-block;
+padding: 30px 90px;
+margin: 15px;
+text-decoration: none;
+background: #ffcc33;/*ボタン色*/
+color: #FFF;
+border-bottom: solid 4px #627295;
+border-radius: 3px
+}
+
+.use_dry:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+.kukaku1{
+margin-top: 5px;
+margin-left: 125px;
+}
+
+.kukaku2{
+margin-left: 625px;
+}
+
+.kukaku3a{
+  margin-top: 100px;
+}
+
+.kukaku3b{
+  margin-top: 10px;
+}
+
+.kukaku4{
+  margin-left: 150px;
+}
+
+.kukaku5{
+  margin-top: 15px;
+  margin-left: 150px;
+}
+
+.kukaku6{
+margin-left:270px;
+margin-top: 35px;
+}
+
+.kukaku7{
+margin-left: 520px;
+}
+
+.redbox{
+  margin-left: 600px
+}
+
+@media screen and (min-width: 649px) and (max-width: 1000px) {
+  .kukaku1{
+  margin-top: 2.5px;
+  margin-left: 62.5px;
+  }
+
+  .kukaku2{
+  margin-left: 360px;
+  }
+
+  .kukaku3a{
+    margin-top: 50px;
+  }
+
+  .kukaku3b{
+    margin-top: 5px;
+  }
+
+  .kukaku4{
+    margin-left: 120px;
+  }
+
+  .kukaku5{
+    margin-top: 7.5px;
+    margin-left: 120px;
+  }
+
+  .kukaku6{
+  margin-left:135px;
+  margin-top: 17.5px;
+  }
+
+  .kukaku7{
+  margin-left: 300px;
+  }
+
+  .redbox{
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .kukaku1{
+  margin-top: 2.5px;
+  margin-left: 62.5px;
+  }
+
+  .kukaku2{
+  margin-left: 360px;
+  }
+
+  .kukaku3a{
+    margin-top: 50px;
+  }
+
+  .kukaku3b{
+    margin-top: 5px;
+  }
+
+  .kukaku4{
+    margin-left: 120px;
+  }
+
+  .kukaku5{
+    margin-top: 7.5px;
+    margin-left: 120px;
+  }
+
+  .kukaku6{
+  margin-left:135px;
+  margin-top: 17.5px;
+  }
+
+  .kukaku7{
+  margin-left: 300px;
+  }
+
+  .redbox{
+    margin-left: 200px;
+  }
+}

@@ -1,0 +1,183 @@
+
+.dry_main_box {
+  max-width: 80%;
+  width:1200px;
+  height:420px;
+
+  /* padding: 10px;
+  margin-bottom: 10px*/
+  border: 3px solid #000000;
+  margin: 0 auto;
+}
+
+
+.clear{clear:both;}
+
+.dry_redbox{
+  color: #FFF;
+  width:50px;
+  height:50px;
+  margin-top: 10px;
+  margin-left:50px;
+  background-color:#F00;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  float: left;
+}
+
+.dry_box{
+  color: #FFF;
+  width:50px;
+  height:50px;
+  margin-top: 10px;
+  margin-left:50px;
+  background-color:#0099ff;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  float: left;
+}
+
+ .dry_blueboxdry_redbox{
+  color: #FFF;
+  width:50px;
+  height:50px;
+  margin-top: 10px;
+  margin-left:50px;
+  background-color:#f-;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  float: left;
+}
+
+/* .kukaku1{
+margin-top: 5px;
+margin-left: 125px;
+}
+
+.kukaku2{
+margin-left: 650px;
+}
+
+.kukaku3a{
+  margin-top: 100px;
+}
+
+.kukaku3b{
+  margin-top: 10px;
+}
+
+.kukaku4{
+  margin-left: 150px;
+}
+
+.kukaku5{
+  margin-top: 15px;
+  margin-left: 150px;
+}
+
+.kukaku6{
+margin-left:270px;
+margin-top: 35px;
+}
+
+.kukaku7{
+margin-left: 520px;
+}
+
+.redbox{
+  margin-left: 600px
+} */
+
+
+@media screen and (max-width: 800px) {
+  .dry_main_box {
+    max-width: 80%;
+    width:600px;
+    height:210px;
+
+    /* padding: 10px;
+    margin-bottom: 10px*/
+    border: 3px solid #000000;
+    margin: 0 auto;
+  }
+
+
+  .clear{clear:both;}
+
+  .dry_redbox{
+    color: #FFF;
+    width:25px;
+    height:25px;
+    margin-top: 2.5px;
+    margin-left:17.5px;
+    background-color:#F00;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    float: left;
+  }
+
+  .dry_box{
+    color: #FFF;
+    width:25px;
+    height:25px;
+    margin-top: 2.5px;
+    margin-left:17.5px;
+    background-color:#0099ff;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    float: left;
+  }
+
+   .dry_blueboxdry_redbox{
+    color: #FFF;
+    width:25px;
+    height:25px;
+    margin-top: 2.5px;
+    margin-left:17.5px;
+    background-color:#f-;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    float: left;
+  }
+
+
+  /* .kukaku1{
+  margin-top: 2.5px;
+  margin-left: 62.5px;
+  }
+
+  .kukaku2{
+  margin-left: 360px;
+  }
+
+  .kukaku3a{
+    margin-top: 50px;
+  }
+
+  .kukaku3b{
+    margin-top: 5px;
+  }
+
+  .kukaku4{
+    margin-left: 120px;
+  }
+
+  .kukaku5{
+    margin-top: 7.5px;
+    margin-left: 120px;
+  }
+
+  .kukaku6{
+  margin-left:135px;
+  margin-top: 17.5px;
+  }
+
+  .kukaku7{
+  margin-left: 300px;
+  }
+
+  .redbox{
+    margin-left: 200px;
+  } */
+
+}

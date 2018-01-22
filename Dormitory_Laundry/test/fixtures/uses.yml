@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  facility: MyString
+  situation: 1
+  time: 
+  userID: MyString
+
+two:
+  facility: MyString
+  situation: 1
+  time: 
+  userID: MyString
