@@ -1,0 +1,116 @@
+<html>
+ <head>
+  <title>洗濯機利用状況</title>
+  <link rel="stylesheet" href="float.css">
+  <meta name="viewport" content="width=device-width,user-scalable=yes,maximum-scale=2" />
+ </head>
+ <body>
+
+  <div id="wrapper">
+   <header>
+     <div class="user">ユーザID:gaibu
+      <input type="button" onclick="location.href='/'" value="ログアウト" >
+      <!--<%= button_to "ログアウト", sessions_path  %>-->
+     </div>
+     <p class="title">ランドリー状況確認システム</p>
+   </header>
+
+	
+     <div class="square1" style="background-color:gray">乾燥機</div>
+      <a href =/gaibu>
+     <div class="square1" style="background-color:orange">洗濯機</div>
+	</a>
+
+     <div class="pagetitle">
+       <h1 class="textcenter"> 乾燥機利用状況 </h1>
+     </div>
+
+     <div class="main_box">
+       <!--区画１-->
+       <div class="kukaku1">
+	<a href=/gaibu_touroku2>
+       <div class="wash_redbox" > 1</div>
+	</a>
+       <div class="wash_<%= "red" if @dry2.situation == 1%>box" >2</div>
+       <div class="wash_<%= "red" if @dry3.situation == 1%>box" >3</div>
+     </div>
+
+     <!--区画2-->
+       <div class="kukaku2">
+       <div class="wash_<%= "red" if @dry4.situation == 1%>box">4 </div>
+       <div class="wash_<%= "red" if @dry5.situation == 1%>box">5 </div>
+     </div>
+
+     <!--区画３-->
+     <div id="kukaku3">
+     <div class="kukaku3a">
+     <div class="wash_<%= "red" if @dry6.situation == 1%>box"> 6</div>
+     </div>
+
+     <div class="clear"></div>
+
+     <div class="kukaku4">
+     <div class="wash_<%= "red" if @dry8.situation == 1%>box">8 </div>
+     <div class="wash_<%= "red" if @dry9.situation == 1%>box">9 </div>
+
+     <div class="kuhaku"></div>
+
+     <div class="wash_<%= "red" if @dry10.situation == 1%>box"> 10</div>
+     <div class="wash_<%= "red" if @dry11.situation == 1%>box">11</div>
+
+     <div class="kuhaku"></div>
+
+     <div class="wash_<%= "red" if @dry12.situation == 1%>box"> 12</div>
+     <div class="wash_<%= "red" if @dry13.situation == 1%>box">13</div>
+     </div>
+
+     <div class="clear"></div>
+
+     <div class="kukaku5">
+     <div class="wash_<%= "red" if @dry14.situation == 1%>box"> 14</div>
+     <div class="wash_<%= "red" if @dry15.situation == 0%>box"> 15</div>
+
+     <div class="kuhaku"></div>
+
+     <div class="wash_<%= "red" if @dry16.situation == 1%>box"> 16</div>
+     <div class="wash_<%= "red" if @dry17.situation == 0%>box">17</div>
+
+     <div class="kuhaku"></div>
+
+     <div class="wash_<%= "red" if @dry18.situation == 1%>box"> 18</div>
+     <div class="wash_<%= "red" if @dry19.situation == 1%>box">19</div>
+     </div>
+
+     <div class="clear"></div>
+
+
+     <div class="kukaku3b">
+     <div class="wash_<%= "red" if @dry7.situation == 1%>box"> 7</div>
+     </div>
+     </div>
+
+
+     <!-- 区画6 -->
+     <div class="kukaku6">
+     <div class="wash_<%= "red" if @dry20.situation == 1%>box">20</div>
+     <div class="wash_<%= "red" if @dry21.situation == 1%>box">21</div>
+     </div>
+
+     <!-- 区画7 -->
+     <div class="kukaku7">
+     <div class="wash_<%= "red" if @dry22.situation == 1%>box">22</div>
+     <div class="wash_<%= "red" if @dry23.situation == 1%>box">23</div>
+     <div class="wash_<%= "red" if @dry24.situation == 1%>box">24</div>
+     </div>
+     </div>
+
+     <div class="redbox">
+     <div class="wash_redbox"></div>
+     <div class="test" style="float: left"><h2 style="color: red">・・・使用中</h2></div>
+     </div>
+     <div class="bluebox">
+     <div class="wash_box"></div>
+     <div class="test" style="float: left"><h2 style="color: #0099ff">・・・未使用</h2></div>
+     </div>
+</body>
+</html>
