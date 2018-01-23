@@ -33,6 +33,5 @@ Rails.application.routes.draw do
 	get 'gaibu_touroku',to:'sessions#gaibu_touroku'
 	get 'gaibu_water',to:'sessions#gaibu_water'
 	get 'gaibu_comp',to:'sessions#gaibu_comp'
-
-
+	get 'touroku_kanryo.html.erb', to:'sessions#touroku_kanryo'
 end

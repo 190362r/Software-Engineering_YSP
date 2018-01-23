@@ -10,8 +10,7 @@
       <input type="button" onclick="location.href='/'" value="ログアウト" >
       <!--<%= button_to "ログアウト", sessions_path  %>-->
      </div>
-     <div class="notice"><div class="mail"><%= image_tag 'mail_whi.gif' %></div></div>
-     <p class="title">ランドリー状況確認システム</p>
+     <p class="title">ランドリー利用状況確認システム</p>
    </header>
      <div class="pagetitle">
        <h1 class="textcenter"> 乾燥機利用状況 </h1>
@@ -98,7 +97,9 @@
 <div class="dry_redbox"></div>
 <div class="test" style="float: left"><h2 style="color: red">・・・使用中</h2></div>
 </div>
-<div class="bluebox">
+<div class="clear"></div>
+<br>
+<div class="bluebox" style="margin-left:50px">
 <div class="dry_box"></div>
 <div class="test" style="float: left"><h2 style="color: #0099ff">・・・未使用</h2></div>
 </div>
