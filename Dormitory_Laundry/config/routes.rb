@@ -28,5 +28,11 @@ Rails.application.routes.draw do
 	get 'gest_use_wash',to:'gest_use_pages#gest_use_wash'
 	get 'gest_use_dry',to:'gest_use_pages#gest_use_dry'
 	get 'kanri.html.erb', to:'sessions#kanri'
+	get 'gaibu',to:'sessions#gaibu'
+	get 'gaibu2',to:'sessions#gaibu2'
+	get 'gaibu_touroku',to:'sessions#gaibu_touroku'
+	get 'gaibu_water',to:'sessions#gaibu_water'
+	get 'gaibu_comp',to:'sessions#gaibu_comp'
+
 
 end
