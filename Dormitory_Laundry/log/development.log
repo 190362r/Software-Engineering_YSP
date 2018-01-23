@@ -26598,3 +26598,1681 @@ vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_requ
 vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
 vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
 vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 192.168.122.1 at 2018-01-23 17:52:12 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 1460ms (Views: 927.1ms)
+
+
+Started POST "/sessions" for 192.168.122.1 at 2018-01-23 17:52:32 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTWHrlfH06vjQWh+pBGtr62UqpOlek7nVdFgcmHMT/5JxK93FgDODJF4IuB24jKLX9cqM5dUNr2XA818ILqg6g==", "session"=>{"user_id"=>"A011", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT ?[0m  [["user_id", "A011"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? AND "users"."password" = ? LIMIT ?[0m  [["user_id", "A011"], ["password", "0001"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering send_mailer/notification.html.erb within layouts/mailer
+  Rendered send_mailer/notification.html.erb within layouts/mailer (3.9ms)
+  Rendering send_mailer/notification.text.erb within layouts/mailer
+  Rendered send_mailer/notification.text.erb within layouts/mailer (0.4ms)
+SendMailer#notification: processed outbound mail in 1335.2ms
+Sent mail to yspa011@gmail.com (11028.5ms)
+Date: Tue, 23 Jan 2018 17:52:35 +0900
+From: ysphost@gmail.com
+To: yspa011@gmail.com
+Message-ID: <5a66f7d450b15_24c63f94b9162f3c745fb@localhost.localdomain.mail>
+Subject: =?UTF-8?Q?=E3=83=A9=E3=83=B3=E3=83=89=E3=83=AA=E3=83=BC=E5=88=A9=E7=94=A8=E5=AE=8C=E4=BA=86?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5a66f7d3c2e81_24c63f94b9162f3c7447c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5a66f7d3c2e81_24c63f94b9162f3c7447c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Send#notification
+
+, find me in app/views/send_mailer/notification.text.erb
+
+
+----==_mimepart_5a66f7d3c2e81_24c63f94b9162f3c7447c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html lang=3D"ja">
+  <head>
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />
+  </head>
+
+  <body>
+    <p>
+      [=E3=83=A9=E3=83=B3=E3=83=89=E3=83=AA=E3=83=BC/=E6=B4=97=E6=BF=AF=E6=
+=A9=9F]=E3=81=AE=E5=88=A9=E7=94=A8=E3=81=8C=E7=B5=82=E4=BA=86=E3=81=97=E3=
+=81=BE=E3=81=97=E3=81=9F
+    </p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+----==_mimepart_5a66f7d3c2e81_24c63f94b9162f3c7447c--
+
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 14048ms (Views: 133.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 17:52:48 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/loss_search.html.erb" for 192.168.122.1 at 2018-01-23 17:52:55 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#loss_search as HTML
+  Rendering sessions/loss_search.html.erb within layouts/application
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/loss_search.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 212ms (Views: 160.8ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 17:52:58 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search_hit.html.erb" for 192.168.122.1 at 2018-01-23 17:53:09 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#search_hit as HTML
+  Rendering sessions/search_hit.html.erb within layouts/application
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/search_hit.html.erb within layouts/application (158.2ms)
+Completed 200 OK in 335ms (Views: 325.8ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/itiran.css" for 192.168.122.1 at 2018-01-23 17:53:09 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/itiran.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search_result.html.erb" for 192.168.122.1 at 2018-01-23 17:53:12 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#search_result as HTML
+  Rendering sessions/search_result.html.erb within layouts/application
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/search_result.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 189ms (Views: 183.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 17:53:12 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sinkoku_kanryo.html.erb" for 192.168.122.1 at 2018-01-23 17:53:17 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#sinkoku_kanryo as HTML
+  Rendering sessions/sinkoku_kanryo.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/sinkoku_kanryo.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 246ms (Views: 232.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 17:53:17 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sinkoku_kanryo.html.erb" for 192.168.122.1 at 2018-01-23 17:53:41 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#sinkoku_kanryo as HTML
+  Rendering sessions/sinkoku_kanryo.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/sinkoku_kanryo.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 182ms (Views: 177.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 17:53:42 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/loss_search.html.erb" for 192.168.122.1 at 2018-01-23 17:55:21 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#loss_search as HTML
+  Rendering sessions/loss_search.html.erb within layouts/application
+  [1m[36mUser Load (24.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/loss_search.html.erb within layouts/application (1273.0ms)
+Completed 200 OK in 2641ms (Views: 2189.4ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 17:55:27 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 17:55:31 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search_hit.html.erb" for 192.168.122.1 at 2018-01-23 17:55:38 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#search_hit as HTML
+  Rendering sessions/search_hit.html.erb within layouts/application
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/search_hit.html.erb within layouts/application (645.5ms)
+Completed 200 OK in 1552ms (Views: 1484.0ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/itiran.css" for 192.168.122.1 at 2018-01-23 17:55:40 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/itiran.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search_result.html.erb" for 192.168.122.1 at 2018-01-23 17:55:50 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#search_result as HTML
+  Rendering sessions/search_result.html.erb within layouts/application
+  [1m[36mUser Load (12.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/search_result.html.erb within layouts/application (126.5ms)
+Completed 200 OK in 431ms (Views: 385.0ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 17:55:51 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sinkoku_kanryo.html.erb" for 192.168.122.1 at 2018-01-23 17:55:57 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#sinkoku_kanryo as HTML
+  Rendering sessions/sinkoku_kanryo.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/sinkoku_kanryo.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 261ms (Views: 253.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 17:55:57 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sinkoku_kanryo.html.erb" for 192.168.122.1 at 2018-01-23 17:57:24 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#sinkoku_kanryo as HTML
+  Rendering sessions/sinkoku_kanryo.html.erb within layouts/application
+  [1m[36mUser Load (18.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/sinkoku_kanryo.html.erb within layouts/application (99.1ms)
+Completed 200 OK in 505ms (Views: 477.0ms | ActiveRecord: 18.2ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 17:57:25 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sinkoku_kanryo.html.erb" for 192.168.122.1 at 2018-01-23 17:57:55 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#sinkoku_kanryo as HTML
+  Rendering sessions/sinkoku_kanryo.html.erb within layouts/application
+  [1m[36mUser Load (32.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/sinkoku_kanryo.html.erb within layouts/application (120.0ms)
+Completed 200 OK in 584ms (Views: 518.7ms | ActiveRecord: 32.4ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 17:57:56 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/session" for 192.168.122.1 at 2018-01-23 18:06:00 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sessions" for 192.168.122.1 at 2018-01-23 18:06:32 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mUser Load (61.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/index.html.erb within layouts/application (1009.1ms)
+Completed 200 OK in 2029ms (Views: 1860.2ms | ActiveRecord: 61.5ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 18:06:36 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 18:06:38 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 192.168.122.1 at 2018-01-23 18:07:13 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (537.6ms)
+Completed 200 OK in 1573ms (Views: 1136.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 192.168.122.1 at 2018-01-23 18:07:28 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IGoWHA7n5ujsU5Pyh8I9/HT4AZin1m4TvQZ9wWGmxWrImz7FTyD7T55q2WxVMaLYhruBOJX4Fkl/1NDPINAqfg==", "session"=>{"user_id"=>"A011", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT ?[0m  [["user_id", "A011"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? AND "users"."password" = ? LIMIT ?[0m  [["user_id", "A011"], ["password", "0001"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering send_mailer/notification.html.erb within layouts/mailer
+  Rendered send_mailer/notification.html.erb within layouts/mailer (9.4ms)
+  Rendering send_mailer/notification.text.erb within layouts/mailer
+  Rendered send_mailer/notification.text.erb within layouts/mailer (7.9ms)
+SendMailer#notification: processed outbound mail in 878.0ms
+Sent mail to yspa011@gmail.com (5117.8ms)
+Date: Tue, 23 Jan 2018 18:07:29 +0900
+From: ysphost@gmail.com
+To: yspa011@gmail.com
+Message-ID: <5a66fb529566_24c63f94b9461a0874752@localhost.localdomain.mail>
+Subject: =?UTF-8?Q?=E3=83=A9=E3=83=B3=E3=83=89=E3=83=AA=E3=83=BC=E5=88=A9=E7=94=A8=E5=AE=8C=E4=BA=86?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5a66fb5165e80_24c63f94b9461a08746d1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5a66fb5165e80_24c63f94b9461a08746d1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Send#notification
+
+, find me in app/views/send_mailer/notification.text.erb
+
+
+----==_mimepart_5a66fb5165e80_24c63f94b9461a08746d1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html lang=3D"ja">
+  <head>
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />
+  </head>
+
+  <body>
+    <p>
+      [=E3=83=A9=E3=83=B3=E3=83=89=E3=83=AA=E3=83=BC/=E6=B4=97=E6=BF=AF=E6=
+=A9=9F]=E3=81=AE=E5=88=A9=E7=94=A8=E3=81=8C=E7=B5=82=E4=BA=86=E3=81=97=E3=
+=81=BE=E3=81=97=E3=81=9F
+    </p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+----==_mimepart_5a66fb5165e80_24c63f94b9461a08746d1--
+
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 6812ms (Views: 322.2ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 18:07:35 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/loss_search.html.erb" for 192.168.122.1 at 2018-01-23 18:07:46 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#loss_search as HTML
+  Rendering sessions/loss_search.html.erb within layouts/application
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/loss_search.html.erb within layouts/application (54.5ms)
+Completed 200 OK in 937ms (Views: 891.8ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 18:07:48 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search_hit.html.erb" for 192.168.122.1 at 2018-01-23 18:07:52 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#search_hit as HTML
+  Rendering sessions/search_hit.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/search_hit.html.erb within layouts/application (835.5ms)
+Completed 200 OK in 1836ms (Views: 1815.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/itiran.css" for 192.168.122.1 at 2018-01-23 18:07:54 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/itiran.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search_result.html.erb" for 192.168.122.1 at 2018-01-23 18:07:57 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#search_result as HTML
+  Rendering sessions/search_result.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/search_result.html.erb within layouts/application (256.6ms)
+Completed 200 OK in 800ms (Views: 789.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 18:07:58 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sinkoku_kanryo.html.erb" for 192.168.122.1 at 2018-01-23 18:08:05 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#sinkoku_kanryo as HTML
+  Rendering sessions/sinkoku_kanryo.html.erb within layouts/application
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/sinkoku_kanryo.html.erb within layouts/application (195.7ms)
+Completed 200 OK in 880ms (Views: 826.8ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 18:08:06 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sessions" for 192.168.122.1 at 2018-01-23 18:08:12 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered sessions/index.html.erb within layouts/application (93.4ms)
+Completed 200 OK in 880ms (Views: 843.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 18:08:13 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 192.168.122.1 at 2018-01-23 18:10:08 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (618.1ms)
+Completed 200 OK in 3929ms (Views: 3360.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 192.168.122.1 at 2018-01-23 18:10:36 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Oj2/WZHFwUXMRUeEAM9S9ZVOrs/PJFiJ6Ns5cXO6N6LSzJeA0ALc4r58DRrSPM3RZw0ub/0KINMqCZR/MszYtg==", "session"=>{"user_id"=>"kanri", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (25.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? LIMIT ?[0m  [["user_id", "kanri"], ["LIMIT", 1]]
+  [1m[36mUser Load (215.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user_id" = ? AND "users"."password" = ? LIMIT ?[0m  [["user_id", "kanri"], ["password", "0004"], ["LIMIT", 1]]
+  Rendering sessions/kanri.html.erb within layouts/application
+  Rendered sessions/kanri.html.erb within layouts/application (240.4ms)
+Completed 200 OK in 3677ms (Views: 2912.0ms | ActiveRecord: 241.1ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 18:10:40 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/kanri_itiranhensyu.html.erb" for 192.168.122.1 at 2018-01-23 18:10:46 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#kanri_itiranhensyu as HTML
+  Rendering sessions/kanri_itiranhensyu.html.erb within layouts/application
+  Rendered sessions/kanri_itiranhensyu.html.erb within layouts/application (112.6ms)
+Completed 200 OK in 3827ms (Views: 3563.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 18:10:51 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/itiran_hit.html.erb" for 192.168.122.1 at 2018-01-23 18:10:56 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#itiran_hit as HTML
+  Rendering sessions/itiran_hit.html.erb within layouts/application
+  Rendered sessions/itiran_hit.html.erb within layouts/application (242.8ms)
+Completed 200 OK in 696ms (Views: 683.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/itiran.css" for 192.168.122.1 at 2018-01-23 18:10:57 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/itiran.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/itiran_result.html.erb" for 192.168.122.1 at 2018-01-23 18:11:00 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#itiran_result as HTML
+  Rendering sessions/itiran_result.html.erb within layouts/application
+  Rendered sessions/itiran_result.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 659ms (Views: 622.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 18:11:01 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sakujyo_kanryo.html.erb" for 192.168.122.1 at 2018-01-23 18:11:08 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#sakujyo_kanryo as HTML
+  Parameters: {"authenticity_token"=>"JvejperIJZsWqR4D+zsqjFxozezO0LZmCBqdT5e71qLOBot8qw84PGSQVJ0pyLWoritNTPz+zjzKyDBB1s05tg=="}
+  Rendering sessions/sakujyo_kanryo.erb within layouts/application
+  Rendered sessions/sakujyo_kanryo.erb within layouts/application (34.6ms)
+Completed 200 OK in 846ms (Views: 807.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 18:11:09 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sessions" for 192.168.122.1 at 2018-01-23 18:11:11 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mUser Load (12.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered sessions/index.html.erb within layouts/application (241.3ms)
+Completed 500 Internal Server Error in 333ms (ActiveRecord: 12.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
+     9:   <body>
+    10:     <div id="wrapper">
+    11:       <header>
+    12: 	<div class="user">ユーザID:<%= current_user.user_id %>
+    13: 	<input type="button" onclick="location.href='/'" value="ログアウト" >
+    14: 	<!--<%= button_to "ログアウト", sessions_path  %>-->
+    15: 	</div>
+  
+app/views/sessions/index.html.erb:12:in `_app_views_sessions_index_html_erb___3159051185225496800_69908002469160'
+Started GET "/kanri_itiranhensyu.html.erb" for 192.168.122.1 at 2018-01-23 18:15:29 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#kanri_itiranhensyu as HTML
+  Rendering sessions/kanri_itiranhensyu.html.erb within layouts/application
+  Rendered sessions/kanri_itiranhensyu.html.erb within layouts/application (1248.0ms)
+Completed 200 OK in 15628ms (Views: 14942.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 18:15:50 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/itiran_hit.html.erb" for 192.168.122.1 at 2018-01-23 18:15:56 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#itiran_hit as HTML
+  Rendering sessions/itiran_hit.html.erb within layouts/application
+  Rendered sessions/itiran_hit.html.erb within layouts/application (425.1ms)
+Completed 200 OK in 1445ms (Views: 1424.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/itiran.css" for 192.168.122.1 at 2018-01-23 18:15:58 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/itiran.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/itiran_result.html.erb" for 192.168.122.1 at 2018-01-23 18:16:15 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#itiran_result as HTML
+  Rendering sessions/itiran_result.html.erb within layouts/application
+  Rendered sessions/itiran_result.html.erb within layouts/application (76.8ms)
+Completed 200 OK in 752ms (Views: 730.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 18:16:16 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sakujyo_kanryo.html.erb" for 192.168.122.1 at 2018-01-23 18:16:23 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#sakujyo_kanryo as HTML
+  Parameters: {"authenticity_token"=>"jo+rfle2KqcIfLtKDfNcLJ7jPri4xeuyNwzkoQiFySdmfoOnFnE3AHpF8dTfAMMIbKC+GIrrk+j13kmvSfMmMw=="}
+  Rendering sessions/sakujyo_kanryo.erb within layouts/application
+  Rendered sessions/sakujyo_kanryo.erb within layouts/application (46.0ms)
+Completed 200 OK in 778ms (Views: 768.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 18:16:24 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/kanri" for 192.168.122.1 at 2018-01-23 18:16:27 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/kanri"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sakujyo_kanryo.html.erb" for 192.168.122.1 at 2018-01-23 18:22:14 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#sakujyo_kanryo as HTML
+  Parameters: {"authenticity_token"=>"jo+rfle2KqcIfLtKDfNcLJ7jPri4xeuyNwzkoQiFySdmfoOnFnE3AHpF8dTfAMMIbKC+GIrrk+j13kmvSfMmMw=="}
+  Rendering sessions/sakujyo_kanryo.erb within layouts/application
+  Rendered sessions/sakujyo_kanryo.erb within layouts/application (1155.5ms)
+Completed 200 OK in 3664ms (Views: 3154.5ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 18:22:52 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/kanri" for 192.168.122.1 at 2018-01-23 18:22:59 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/kanri"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/kanri" for 192.168.122.1 at 2018-01-23 18:25:41 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/kanri"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sakujyo_kanryo.html.erb" for 192.168.122.1 at 2018-01-23 18:27:48 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#sakujyo_kanryo as HTML
+  Parameters: {"authenticity_token"=>"jo+rfle2KqcIfLtKDfNcLJ7jPri4xeuyNwzkoQiFySdmfoOnFnE3AHpF8dTfAMMIbKC+GIrrk+j13kmvSfMmMw=="}
+  Rendering sessions/sakujyo_kanryo.erb within layouts/application
+  Rendered sessions/sakujyo_kanryo.erb within layouts/application (578.0ms)
+Completed 200 OK in 3282ms (Views: 2808.8ms)
+
+
+Started GET "/naiyoukakunin.css" for 192.168.122.1 at 2018-01-23 18:28:06 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/naiyoukakunin.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/kanri.html.erb" for 192.168.122.1 at 2018-01-23 18:28:11 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#kanri as HTML
+  Rendering sessions/kanri.html.erb within layouts/application
+  Rendered sessions/kanri.html.erb within layouts/application (74.5ms)
+Completed 200 OK in 3507ms (Views: 3405.5ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 18:28:16 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/kanri_itiranhensyu.html.erb" for 192.168.122.1 at 2018-01-23 18:28:21 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#kanri_itiranhensyu as HTML
+  Rendering sessions/kanri_itiranhensyu.html.erb within layouts/application
+  Rendered sessions/kanri_itiranhensyu.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 657ms (Views: 647.3ms)
+
+
+Started GET "/index.css" for 192.168.122.1 at 2018-01-23 18:28:22 +0900
+Cannot render console from 192.168.122.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vender/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `block in call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/tagged_logging.rb:69:in `tagged'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:24:in `call'
+vender/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vender/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vender/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vender/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vender/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/configuration.rb:225:in `call'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:624:in `handle_request'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:438:in `process_client'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/server.rb:302:in `block in run'
+vender/bundle/ruby/2.4.0/gems/puma-3.11.2/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
