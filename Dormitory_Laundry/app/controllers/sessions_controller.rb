@@ -90,5 +90,9 @@ class SessionsController < ApplicationController
   @wash30 = Use.find_by(facility: '1W30')
 	end
 
+        def sinkoku_kanryo
+          #SendMailer.notification(current_user).deliver ランドリー使用完了メール
+          ReportMailer.report.deliver # 紛失物申告メール
+        end
   end
 end
