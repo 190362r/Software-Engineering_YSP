@@ -5,28 +5,28 @@
   <meta name="viewport" content="width=device-width,user-scalable=yes,maximum-scale=2" />
  </head>
  <body>
-  <div id="wrapper">
-      <header>
-	
-	<p class="title">ランドリー状況確認システム</p>
-      </header>
 
+  <div id="wrapper">
+   <header>
+     <div class="user">ユーザID:<%= current_user.user_id %>
+      <input type="button" onclick="location.href='/'" value="ログアウト" >
+      <!--<%= button_to "ログアウト", sessions_path  %>-->
+     </div>
+     <div class="notice"><div class="mail"><%= image_tag 'mail_whi.gif' %></div></div>
+     <p class="title">ランドリー状況確認システム</p>
+   </header>
      <div class="pagetitle">
        <h1 class="textcenter"> 洗濯機利用状況 </h1>
      </div>
 
-    <a href =/gaibu3>
-     <div class="square1" style="background-color: orange">乾燥機</div> 
-     </a>
-      <div class="square1" style="background-color: gray">洗濯機</div>
-	<div class="clear"></div>
      <div class="main_box">
        <!--区画１-->
        <div class="kukaku1">
-       <div class="wash_<%= "red" if @wash1.situation == 1%>box" > 1</div>
-	<a href =/gaibu_touroku>
-       <div class="wash_redbox" >2</div>
-	</a>
+	 <div class="wash_<%= "red" if @wash1.situation == 1%>box" >
+	   1
+	   <%= button_to "situation=1",  %>
+	 </div>
+       <div class="wash_<%= "red" if @wash2.situation == 1%>box" >2</div>
        <div class="wash_<%= "red" if @wash3.situation == 1%>box">3</div>
      </div>
 
